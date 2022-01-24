@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* Verwende unter anderem die Befehle: grid-template-columns, grid-template-rows,  grid-gap,  grid-column,  grid-row. */
+
+body {
+    margin: 5%;
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 10% auto 8%;
+    grid-template-columns: 30% auto;
+    gap: 1%;
+}
+
+header {
+    background: blue;
+    grid-column: 1 / 3;
+}
+
+aside {
+    background: green;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+main {
+    background: red;
+}
+
+footer {
+    background: purple;
+    grid-column: 1 / 3;
+}
+
